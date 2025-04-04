@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;  /* задаёт размер внешнего отступа вокруг элемента */
+    padding: 0; /* задает внутренние отступы от границы элемента до его внутреннего содержимого */
+    font-family: "PT Serif", serif; /* приоритетный список из одного или нескольких названий семейства шрифтов */
+}
+
+html {
+    scroll-behavior: smooth; /* управляет прокруткой элементов на веб-странице */
+}
+
+a {
+    text-decoration: none; /* убирает подчеркивание у ссылок */
+    color: black;
+    font-weight: bold; /* устанавливает жирность текста */
+}
+
+img {
+    padding-left: 10px; /* отступ слева от изображения */
+    padding-top: 20px; /* отступ сверху от изображения */
+}
+
+.menu-header {
+    display: flex; /* включает flex-контейнер */
+    align-items: center; /* выравнивает элементы по вертикали */
+    justify-content: center; /* выравнивает элементы по горизонтали */
+}
+
+.menu-header ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none; /* убирает маркеры списка */
+    margin: 0;
+}
+
+.menu-header li {
+    margin-right: 50px;
+    margin-left: 80px;
+}
+
+a:hover {
+    color: grey; /* цвет при наведении */
+}
+
+.background {
+    background-attachment: fixed; /* фиксированный фон */
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat; /* запрет повторения фона */
+    background-size: cover; /* масштабирование фона */
+    position: relative;
+    /* filter: brightness(0.7); */
+}
+
+.content {
+    padding-top: 5px;
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* центрирование элемента */
+    border-radius: 18px; /* скругление углов */
+    background-color: rgba(255, 255, 255, 0.9); /* полупрозрачный белый фон */
+    display: flex;
+    flex-direction: column; /* вертикальное расположение элементов */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
